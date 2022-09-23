@@ -18,7 +18,7 @@ class SessionHostDomainMiddleware(SessionMiddleware):
     SESSION_COOKIE_DOMAIN = '.example.com'
     SESSION_COOKIE_DOMAIN_DICT = {
         '.example.com': r'[a-zA-Z0-9\-_.:]*.example.com',
-        '.domain.com': r'[a-zA-Z0-9\-_.:]*.example.com'
+        '.domain.com': r'[a-zA-Z0-9\-_.:]*.domain.com'
     }
 
     def process_response(self, request, response):
